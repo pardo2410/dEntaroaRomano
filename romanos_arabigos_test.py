@@ -43,6 +43,9 @@ class ArabigoNumberTest(unittest.TestCase):
         self.assertEqual(arabigos.arabigo_a_romano(4),'IV')
         self.assertEqual(arabigos.arabigo_a_romano(5),'V')
         self.assertEqual(arabigos.arabigo_a_romano(10),'X')
+        self.assertEqual(arabigos.arabigo_a_romano(60),'LX')
+        self.assertEqual(arabigos.arabigo_a_romano(80),'LXXX')
+        self.assertEqual(arabigos.arabigo_a_romano(40),'XL')
         self.assertEqual(arabigos.arabigo_a_romano(440),'CDXL')
 
 

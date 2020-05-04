@@ -12,8 +12,6 @@ def romano_a_entero(numero_romano):
     
     for letra in numero_romano:
 
-            
-    
         if letra in Romanos:
 
             if letraAnt != '' and Romanos[letraAnt] >= Romanos[letra]:
