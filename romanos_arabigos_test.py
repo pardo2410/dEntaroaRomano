@@ -3,6 +3,7 @@
 import unittest 
 import romanos
 import arabigos
+import romanos_cata
 
 class RomanNumberTest(unittest.TestCase):
 
