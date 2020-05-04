@@ -31,7 +31,7 @@ def romano_a_entero(numero_romano):
             return 'Error en formato'
         elif letra == 'M' and letraAnt == 'V' or letra == 'D' and letraAnt == 'V'or letra == 'C' and letraAnt == 'V'or letra == 'L' and letraAnt == 'V'or letra == 'X' and letraAnt == 'V':
             return 'Error en formato'
-        elif letra == 'M' and letraAnt == 'X' or letra == 'D' and letraAnt == 'X':
+        elif letra == 'M' and letraAnt == 'X' or letra == 'D' and letraAnt == 'X'or letra == 'C' and letraAnt == 'X':
             return 'Error en formato'
         elif letra == 'L' and  letraAnt == 'X' and  letraAnt2 == 'X' or letra == 'C' and  letraAnt == 'X' and  letraAnt2 == 'X' or letra == 'X' and  letraAnt == 'I' and  letraAnt2 == 'I' or letra == 'V' and  letraAnt == 'I' and  letraAnt2 == 'I':
             return 'Error en formato'
