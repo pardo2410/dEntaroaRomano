@@ -29,7 +29,8 @@ class RomanNumberTest(unittest.TestCase):
         self.assertEqual(romanos.romano_a_entero('XLIX'), 49)
         self.assertEqual(romanos.romano_a_entero('XLVIII'), 48)
         self.assertEqual(romanos.romano_a_entero('VLIII'), 'Error en formato')
-        self.assertEqual(romanos.romano_a_entero('XIXL'), 'Error en formato')
+        self.assertEqual(romanos.romano_a_entero('XXL'), 'Error en formato')
+     
 
 
 if __name__=='__main__':

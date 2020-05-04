@@ -22,8 +22,10 @@ def romano_a_entero(numero_romano):
     
     if letra not in Romanos:
         return 'Error en formato'  
+    
     letraAnt = ''
     letraAnt2 = ''
+    
     for letra in numero_romano:
         
         if letra == 'L' and letraAnt == 'I' or letra == 'C' and letraAnt == 'I' or letra == 'D' and letraAnt == 'I' or letra == 'M' and letraAnt == 'I':
