@@ -2,6 +2,7 @@
 
 import unittest 
 import romanos
+import arabigos
 
 class RomanNumberTest(unittest.TestCase):
 
@@ -30,6 +31,21 @@ class RomanNumberTest(unittest.TestCase):
         self.assertEqual(romanos.romano_a_entero('XLVIII'), 48)
         self.assertEqual(romanos.romano_a_entero('VLIII'), 'Error en formato')
         self.assertEqual(romanos.romano_a_entero('XXL'), 'Error en formato')
+
+class ArabigoNumberTest(unittest.TestCase):
+
+    def test_symbols_arabigos(self):
+        self.assertEqual(arabigos.arabigo_a_romano(3999), 'MMMCMXCIX')
+        self.assertEqual(arabigos.arabigo_a_romano(1),'I')
+        self.assertEqual(arabigos.arabigo_a_romano(2),'II')
+        self.assertEqual(arabigos.arabigo_a_romano(3),'III')
+        self.assertEqual(arabigos.arabigo_a_romano(4),'IV')
+        self.assertEqual(arabigos.arabigo_a_romano(5),'V')
+        self.assertEqual(arabigos.arabigo_a_romano(10),'X')
+        self.assertEqual(arabigos.arabigo_a_romano(440),'CDXL')
+
+
+
      
 
 
